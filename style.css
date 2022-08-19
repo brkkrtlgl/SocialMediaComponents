@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    border: 0;
+    font-family: 'Mulish', sans-serif;
+    outline: 0;
+}
+
+html,body{
+    background: #F9EAE3;
+    height: 100%;
+}
+
+body{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    z-index: 1;
+
+}
+body::before {
+    content: '';
+    width: 736px;
+    height: 736px;
+    background: #FFC295;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+
+
+.component{
+    background: #fff;
+    width: 500px;
+    max-width: 500px;
+    padding: 30px 40px;
+    border-radius: 15px;
+    margin: 15px;
+    box-shadow: 0 25px 60px -30px rgba(159, 70, 28, .6);
+}
+
+.component h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.component .tags{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5px;
+    margin: 0 -5px -5px;
+}
+
+.component .tags a{
+    height: 40px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 15px;
+    border-radius: 5px;
+    color: #1A1B38;
+    border: 1px solid #1A1B38;
+    transition: 300ms background-color;
+}
+
+.component .tags a:hover{
+    background-color: #F9EAE3;
+}
+.component .authors{
+    padding-top: 20px;
+    color: #1A1B38;
+}
+
+.component .authors li{
+    display: flex;
+    align-items: center;
+}
+
+.component .authors li:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.component .authors li img{
+    width: 83px;
+    height: 83px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.component .authors .name{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.component .authors .location{
+    font-size: 16px;
+    background: url(/Assets/icon-location.svg) no-repeat 0;
+    padding-left: 25px;
+}
+
+.component .authors .follow-btn{
+    margin-left: auto;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color:#FFC295;
+    padding: 0 15px;
+    border: 1px solid #1A1B38;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1A1B38;
+}
+
+.component h4{
+    font-weight: 400;
+    margin-bottom: 45px;
+}
+
+.component .project-actions{
+    display: flex;
+    justify-content: space-around;
+    height: 89px;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid rgba(26, 27, 56, .14);
+    margin-bottom: 25px;
+}
+
+.component .project-actions li{
+    display: flex;
+    align-items: center;
+}
+.component .project-actions li img{
+    margin-right: 8px;
+}
+
+.component .like-btn{
+    background-color: #FFC295;
+    color: #1A1B38;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 25px;
+    height: 54px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #1A1B38;
+}
